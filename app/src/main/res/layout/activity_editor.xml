@@ -42,7 +42,7 @@
             android:layout_height="45dp"
             android:paddingLeft="30dp"
             android:text="@string/str_personal_editorActivityFinish"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
     </LinearLayout>
     <!--头像处理的控件-->
     <LinearLayout

@@ -195,7 +195,7 @@ public class EditorActivity extends AppCompatActivity
         }
         if (requestCode == GET_PHOTO) {//如果请求码等于GET_PHOTO的话说明是在相册获取到图片的返回
             Uri data1 = data.getData();//获取到图片的uri
-            String path = findPath(data1);//根据uri去找图片地址
+           // String path = findPath(data1);//根据uri去找图片地址
             //Log.e("======",path);
             startRESULT(data1);
         }
