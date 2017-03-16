@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 地图定位-->
+            <com.amap.api.maps.MapView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map"
+                android:clickable="true">
+            </com.amap.api.maps.MapView>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="40dp"
+                    android:gravity="center"
+                    android:id="@+id/tvLocation"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rigtershapes"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/location"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/navigate"
+                    android:layout_width="40dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/rigtershapes"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/navigate"/>
+                </RelativeLayout>
+                <!--  交通地图-->
+                <RelativeLayout
+                    android:id="@+id/traffic"
+                    android:layout_width="40dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/rigtershapes"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/traffic"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorPrimary">
+                <RelativeLayout
+                    android:id="@+id/butt_selector"
+                    android:layout_width="60dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/butt_selector">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/person" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_height="wrap_content">
+                <include layout="@layout/menu_right_bottom"/>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/but_seekhelp"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="立即   求助"
+                android:textColor="@color/colorwehite"
+                android:textSize="20dp"
+                android:background="@drawable/seekaelp"
+                />
+        </RelativeLayout>
+</RelativeLayout>

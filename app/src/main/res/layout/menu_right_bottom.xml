@@ -1,0 +1,79 @@
+<com.example.administrator.mapclient.view.ArcMenu 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/com.example.administrator.mapclient"
+    android:id="@+id/id_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    hyman:position="right_bottom"
+    hyman:radius="140dp" >
+    <RelativeLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/spreadorrecall" >
+        <ImageView
+            android:id="@+id/id_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/composer_icn_plus" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/spreadorrecall1"
+        android:tag="Music">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/set_up" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/spreadorrecall1"
+        android:tag="Place">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/frend" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/spreadorrecall1"
+        android:tag="Sleep">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/prentson" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/spreadorrecall1"
+        android:tag="Sun">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/state" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/spreadorrecall1"
+        android:tag="People">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/interest" />
+    </RelativeLayout>
+</com.example.administrator.mapclient.view.ArcMenu>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/actiview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorwehite"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <ImageView
+            android:id="@+id/HomeActivity"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.19"
+            android:paddingLeft="5dp"
+            android:src="@mipmap/returnlogin"/>
+
+        <TextView
+            android:id="@+id/phonregister"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_weight="0.42"
+            android:gravity="center"
+            android:text="@string/app_personal"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/personal_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_editor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#F0F0F0"
+        android:id="@+id/headPortraitSeting"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/actiview"
+        android:gravity="center">
+
+        <com.example.administrator.mapclient.view.RoundImageView
+            android:id="@+id/headPortraitImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/nickimg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:id="@+id/Personal_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_nickname"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView_personal_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="一路有你"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_sex"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_sex"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/TextView_personal_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="null"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_age"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_age"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/TextView_personal_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="等待你的完善哦"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_birthday"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/TextView_personal_birthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="等待你的完善哦"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_bloodType"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_bloodType"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView_personal_bloodType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="等待你的完善哦"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_Frofession"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_Profession"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView_personal_Profession"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="等待你的完善哦"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_Email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_Email"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="....@163.com/....qq.com"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

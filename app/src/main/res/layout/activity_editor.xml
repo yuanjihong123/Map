@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    tools:context="com.example.administrator.mapclient.activity.homepage.EditorActivity">
+    <!--个人资料编辑-->
+    <LinearLayout
+        android:id="@+id/actiview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorwehite"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!--头部返回建-->
+        <ImageView
+            android:id="@+id/returnPersonalAcivity"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.19"
+            android:paddingLeft="5dp"
+            android:src="@mipmap/returnlogin" />
+        <!--头部标题-->
+        <TextView
+            android:id="@+id/phonregister"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_weight="0.42"
+            android:gravity="center"
+            android:text="@string/str_personal_editorActivity"
+            android:textSize="20dp" />
+        <!--头部编辑完成按钮-->
+        <TextView
+            android:id="@+id/personal_editor_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_editorActivityFinish"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!--头像处理的控件-->
+    <LinearLayout
+        android:id="@+id/headPortraitSeting"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/actiview"
+        android:background="#F0F0F0"
+        android:gravity="center">
+
+        <com.example.administrator.mapclient.view.RoundImageView
+            android:id="@+id/headPortraitImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/nickimg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Personal_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorwehite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_nickname"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/EditText_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:maxLength="10"
+            android:hint="@string/str_personal_editorActivitynickname"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--性别选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorwehite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_personal_sex"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男" />
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--年龄-->
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_age"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_age"
+            android:textSize="25sp" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/EditText_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="请输入年龄。。"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--生日-->
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_birthday"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/Editor_Birsthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="0000-00-00"
+            android:textSize="18sp"
+            android:onClick="btnShowDate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_bloodType"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_bloodType"
+            android:textSize="25sp" />
+        <!--<EditText
+            android:id="@+id/EditText_bloodType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="请输入血型"
+            android:textSize="18sp" />-->
+        <Spinner
+            android:id="@+id/bloodType_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="25sp"
+            android:entries="@array/spingarr">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_Profession"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_Profession"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/EditText_personal_Profession"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="请输入职业"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorwehite"
+        android:layout_marginTop="6dp"
+        android:id="@+id/Personal_Email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/str_personal_Email"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/EditText_personal_Email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="....@163.com/....qq.com"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
