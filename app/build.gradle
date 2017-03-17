@@ -27,7 +27,7 @@ android {
     signingConfigs {
         debug{
             /*地址  ：最好整成那个绝对的路劲C:\Users\Administrator\.android*/
-            storeFile file("C:/Users/Administrator/.android/debug.keystore")
+            storeFile file("C:/Users/506-1/.android/debug.keystore")
         }
     } 
     

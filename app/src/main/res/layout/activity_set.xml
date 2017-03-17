@@ -18,7 +18,32 @@
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:textSize="20sp"
-            android:text="接受新消息通知"
+            android:text="是否允许好友查看我的位置"
+            />
+        <ToggleButton
+            android:id="@+id/toggleBtnLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_togglebtn"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="接收新消息通知"
             />
         <ToggleButton
             android:id="@+id/toggleBtn"

@@ -17,7 +17,7 @@ import com.example.administrator.mapclient.utils.CacheUtils;
  * 设置
  */
 public class SetActivity extends AppCompatActivity{
-    ToggleButton toggleBtn,toggleBtnInform;//打开/关闭
+    ToggleButton toggleBtn,toggleBtnInform,toggleBtnLocation;//打开/关闭
     Button exitBtn;//退出
     LinearLayout clearCache;//清除缓存
     LinearLayout checkUpdate;//检查更新
@@ -41,6 +41,7 @@ public class SetActivity extends AppCompatActivity{
         showCache.setText(totalCacheSize);
         toggleBtn.setChecked(true);
         toggleBtnInform.setChecked(true);
+        toggleBtnLocation.setChecked(true);
         toggleBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -52,6 +53,12 @@ public class SetActivity extends AppCompatActivity{
             }
         });
         toggleBtnInform.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+            }
+        });
+        toggleBtnLocation.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
@@ -114,5 +121,6 @@ public class SetActivity extends AppCompatActivity{
         checkUpdate  = (LinearLayout) findViewById(R.id.checkUpdate);
         aboutUs  = (LinearLayout) findViewById(R.id.aboutUs);
         showCache = (TextView) findViewById(R.id.showCache);
+        toggleBtnLocation = (ToggleButton) findViewById(R.id.toggleBtnLocation);
     }
 }

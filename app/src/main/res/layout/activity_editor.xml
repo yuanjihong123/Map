@@ -22,28 +22,37 @@
             android:id="@+id/returnPersonalAcivity"
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.19"
             android:paddingLeft="5dp"
-            android:src="@mipmap/returnlogin" />
+            android:src="@mipmap/returnlogin"/>
+
         <!--头部标题-->
         <TextView
             android:id="@+id/phonregister"
-            android:layout_width="260dp"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:layout_marginRight="0dp"
             android:layout_weight="0.42"
             android:gravity="center"
             android:text="@string/str_personal_editorActivity"
             android:textSize="20dp" />
+
+
+
+
         <!--头部编辑完成按钮-->
         <TextView
             android:id="@+id/personal_editor_finish"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:paddingLeft="30dp"
+            android:layout_height="wrap_content"
             android:text="@string/str_personal_editorActivityFinish"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
     </LinearLayout>
+
+
+
+
+
     <!--头像处理的控件-->
     <LinearLayout
         android:id="@+id/headPortraitSeting"
